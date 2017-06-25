@@ -6,4 +6,4 @@ from flask_restful import Resource
 class moduleApi(Resource):
 
     def get(self):
-        pass
+        return {'hello': 'world'}
