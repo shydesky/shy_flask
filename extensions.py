@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import types
 from flask_restful import Api
-print(2)
 api = Api()
 
 def api_route(self, *args, **kwargs):
