@@ -6,6 +6,11 @@ from shy_flask import (module1)
 from settings import ProdConfig, DevConfig
 
 
+def register_extensions(app):
+    api.init_app(app)
+    db.init_app(app)
+
+
 def create_app(config_object=ProdConfig):
     app = Flask(__name__)
     app.config.from_object('config')
@@ -29,9 +34,7 @@ config = which_config()
 app = create_app(config_object=config)
 
 
-def register_extensions(app):
-    api.init_app(app)
-    db.init_app(app)
+
 
 
 if __name__ == '__main__':
