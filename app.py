@@ -3,7 +3,7 @@ from flask import Flask
 from flask.helpers import get_debug_flag
 from extensions import api, db
 from shy_flask import (module1)
-from shy_flask.settings import ProdConfig, DevConfig
+from .settings import ProdConfig, DevConfig
 
 
 def create_app(config_object=ProdConfig):
