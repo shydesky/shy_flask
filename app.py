@@ -9,7 +9,7 @@ from settings import ProdConfig, DevConfig
 def register_extensions(app):
     api.init_app(app)
     db.init_app(app)
-    migrate.init(app)
+    migrate.init_app(app, db)
 
 
 def create_app(config_object=ProdConfig):
