@@ -1,4 +1,4 @@
-from extentisons import db
+from extensions import db
 from database import SurrogatePK, Column
 
 

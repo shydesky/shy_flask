@@ -42,7 +42,7 @@ class ProdConfig(Config):
     ENV = 'prod'
     DEBUG = False
     DB_USER = 'root'
-    DB_PASSWORD = '3333'
+    DB_PASSWORD = 'papaya'
     DB_NAME = 'test_shy'
     DB_PATH = 'localhost'
     DB_PORT = 3306
