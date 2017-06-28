@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from flask.helpers import get_debug_flag
-from extensions import api, db
+from extensions import api, db, migrate
 from shy_flask import (module1)
 from settings import ProdConfig, DevConfig
 
@@ -9,6 +9,7 @@ from settings import ProdConfig, DevConfig
 def register_extensions(app):
     api.init_app(app)
     db.init_app(app)
+    migrate.init(app)
 
 
 def create_app(config_object=ProdConfig):

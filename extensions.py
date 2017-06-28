@@ -2,9 +2,11 @@
 import types
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
 api = Api()
 db = SQLAlchemy()
+migrate = Migrate()
 
 
 def api_route(self, *args, **kwargs):
