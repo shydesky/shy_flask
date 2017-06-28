@@ -42,19 +42,14 @@ class ProdConfig(Config):
     ENV = 'prod'
     DEBUG = False
     DB_USER = 'root'
-    DB_PASSWORD = 'q1w2e3r4'
-    DB_NAME = 'crm_prod'
-    DB_PATH = 'crm-prod.cjfrqij7amkp.us-west-1.rds.amazonaws.com'
+    DB_PASSWORD = '3333'
+    DB_NAME = 'test_shy'
+    DB_PATH = 'localhost'
     DB_PORT = 3306
     SQLALCHEMY_DATABASE_URI = 'mysql://%s:%s@%s:%s/%s?charset=utf8' % (
         DB_USER, DB_PASSWORD, DB_PATH, DB_PORT, DB_NAME
     )
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
-
-    SQLALCHEMY_BINDS = {
-        'redshift': 'postgres://appfloodcode:Papaya123@52.13.15.65:5439/server',
-        'affiliate_mysql': 'mysql://root:papaya@aflt-mysql-slave.cjfrqij7amkp.us-west-1.rds.amazonaws.com/server'
-    }
 
 
 class DevConfig(Config):
