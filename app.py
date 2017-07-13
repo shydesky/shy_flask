@@ -3,7 +3,7 @@ import os
 from flask import Flask
 from flask.helpers import get_debug_flag
 from extensions import api, db, migrate
-from shy_flask import (module1)
+from shy_flask import (module1, module2)
 from settings import ProdConfig, DevConfig
 
 
